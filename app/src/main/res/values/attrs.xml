@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomProgress">
+        <attr name="customProgress_progress" format="float" />
+        <attr name="customProgress_left_color" format="color" />
+        <attr name="customProgress_right_color" format="color" />
+    </declare-styleable>
+</resources>
