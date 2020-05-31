@@ -13,6 +13,8 @@ class CustomProgress @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
 
     private var progress: Float
+    private var leftColor: Int
+    private var rightColor: Int
     private var progressCurrentWidth = 0
 
     private var progressDrawable: ShapeDrawable
@@ -23,17 +25,19 @@ class CustomProgress @JvmOverloads constructor(
 
         try {
             progress = typedArray.getFloat(R.styleable.CustomProgress_customProgress_progress, 0F)
+            leftColor = typedArray.getColor(R.styleable.CustomProgress_customProgress_left_color, Color.WHITE)
+            rightColor = typedArray.getColor(R.styleable.CustomProgress_customProgress_right_color, Color.BLACK)
         } finally {
             typedArray.recycle()
         }
 
         val noRadius = floatArrayOf(0F, 0F, 0F, 0F, 0F, 0F, 0F, 0F)
         progressDrawable = ShapeDrawable(RoundRectShape(noRadius, null, null)).apply {
-            paint.color = Color.WHITE
+            paint.color = leftColor
         }
 
         backgroundDrawable = ShapeDrawable(RoundRectShape(noRadius, null, null)).apply {
-            paint.color = Color.BLACK
+            paint.color = rightColor
         }
     }
 
