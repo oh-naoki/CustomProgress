@@ -4,5 +4,6 @@
         <attr name="customProgress_progress" format="float" />
         <attr name="customProgress_left_color" format="color" />
         <attr name="customProgress_right_color" format="color" />
+        <attr name="customProgress_radius" format="integer" />
     </declare-styleable>
 </resources>
