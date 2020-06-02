@@ -1,2 +1,2 @@
 ## Animating progress bar sample
-![sample_progress](https://user-images.githubusercontent.com/16508442/83345682-19474100-a351-11ea-9e83-857095b68a51.gif)
+![Jun-02-2020 23-36-54](https://user-images.githubusercontent.com/16508442/83533001-fe7bf480-a529-11ea-86a4-fca13781740f.gif)
